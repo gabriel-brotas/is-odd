@@ -25,8 +25,5 @@
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "semantic-release": "^19.0.3"
-  },
-  "publishConfig": {
-    "@gabriel-brotas:registry": "https://npm.pkg.github.com"
   }
 }
