@@ -30,7 +30,7 @@ jobs:
         
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
