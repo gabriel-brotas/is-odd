@@ -1,0 +1,26 @@
+{
+  "name": "@gbrotas/is-odd",
+  "version": "0.0.0-development",
+  "description": "verify is number is even or odd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabriel-brotas/semantic-release.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "gabriel-brotas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriel-brotas/semantic-release/issues"
+  },
+  "homepage": "https://github.com/gabriel-brotas/semantic-release#readme",
+  "devDependencies": {
+    "semantic-release": "^19.0.3"
+  }
+}
