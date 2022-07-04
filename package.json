@@ -16,13 +16,16 @@
   },
   "homepage": "https://github.com/gabriel-brotas/is-odd#readme",
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/github": "^8.0.4",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "semantic-release": "^19.0.3"
   },
   "publishConfig": {
-		"@gabriel-brotas:registry": "https://npm.pkg.github.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/gabriel-brotas/is-odd.git"
-	}
+    "@gabriel-brotas:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriel-brotas/is-odd.git"
+  }
 }
