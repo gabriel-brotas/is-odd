@@ -35,4 +35,5 @@ jobs:
           # NPM_TOKEN: '${{ secrets.AUTH_TOKEN }}'
           NODE_AUTH_TOKEN: '${{ secrets.AUTH_TOKEN }}'
         run: |
+          cat $HOME/secrets/my_secret.json
           npx semantic-release
