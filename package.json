@@ -1,6 +1,6 @@
 {
   "name": "@gabriel-brotas/is-odd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "verify is number is even or odd",
   "main": "index.js",
   "scripts": {
