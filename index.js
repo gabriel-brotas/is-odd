@@ -1,4 +1,5 @@
 function isOdd(number) {
+    console.log(number)
     return number % 2 != 0
 }
 
