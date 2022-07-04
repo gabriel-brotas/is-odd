@@ -4,7 +4,6 @@
   "description": "verify is number is even or odd",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release"
   },
   "repository": {
