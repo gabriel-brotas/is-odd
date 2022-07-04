@@ -19,6 +19,10 @@
     "semantic-release": "^19.0.3"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+		"@gabriel-brotas:registry": "https://npm.pkg.github.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gabriel-brotas/is-odd.git"
+	}
 }
