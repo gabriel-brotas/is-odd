@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gabriel-brotas/is-odd#readme",
   "devDependencies": {
+    "@semantic-release/npm": "^9.0.1",
     "semantic-release": "^19.0.3"
   },
   "publishConfig": {
@@ -27,8 +28,9 @@
   },
   "release": {
     "branches": [
-      { "name": "master" },
-      { "name": "develop", "channel": "beta", "prerelease": "beta" }
+      {
+        "name": "master"
+      }
     ]
   }
 }
