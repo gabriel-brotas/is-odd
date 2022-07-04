@@ -8,9 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # permissions:
-    #   packages: write
-    #   contents: read
+    permissions:
+      packages: write
+      contents: read
 
     steps:
       - name: Checkout
@@ -22,8 +22,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.13.0
-          registry-url: https://npm.pkg.github.com
-          scope: "@gabriel-brotas"
+          # registry-url: https://npm.pkg.github.com
+          # scope: "@gabriel-brotas"
 
       - name: Install dependencies
         run: npm install

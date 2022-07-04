@@ -15,6 +15,10 @@
     "url": "https://github.com/gabriel-brotas/is-odd/issues"
   },
   "homepage": "https://github.com/gabriel-brotas/is-odd#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabriel-brotas/is-odd.git"
+  },
   "devDependencies": {
     "semantic-release": "^19.0.3"
   }
