@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "description": "verify is number is even or odd",
   "main": "index.js",
+  "private": "true",
   "scripts": {
     "semantic-release": "semantic-release"
   },
