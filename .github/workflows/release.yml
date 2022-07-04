@@ -31,15 +31,7 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: '${{ secrets.AUTH_TOKEN }}'
-          NPM_TOKEN: '${{ secrets.AUTH_TOKEN }}'
+          GH_TOKEN: '${{ secrets.AUTH_TOKEN }}'
+          # NPM_TOKEN: '${{ secrets.AUTH_TOKEN }}'
           NODE_AUTH_TOKEN: '${{ secrets.AUTH_TOKEN }}'
         run: npx semantic-release
-
-    # steps:
-    #   - uses: actions/checkout@v3
-    #   - uses: actions/setup-node@v3
-    #     with:
-    #       node-version: 16.13.0
-
-      # - run: npm ci
-      # - run: npm test
