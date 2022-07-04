@@ -1,14 +1,10 @@
 {
-  "name": "@gabriel-brotas/is-odd",
+  "name": "gabriel-brotas-is-odd",
   "version": "0.0.2",
   "description": "verify is number is even or odd",
   "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gabriel-brotas/is-odd.git"
   },
   "keywords": [
     "javascript"
@@ -20,10 +16,6 @@
   },
   "homepage": "https://github.com/gabriel-brotas/is-odd#readme",
   "devDependencies": {
-    "@semantic-release/commit-analyzer": "^9.0.2",
-    "@semantic-release/github": "^8.0.4",
-    "@semantic-release/npm": "^9.0.1",
-    "@semantic-release/release-notes-generator": "^10.0.3",
     "semantic-release": "^19.0.3"
   }
 }
