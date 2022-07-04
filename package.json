@@ -1,5 +1,5 @@
 {
-  "name": "@gbrotas/is-odd",
+  "name": "gbrotas-is-odd",
   "version": "0.0.0-development",
   "description": "verify is number is even or odd",
   "main": "index.js",
