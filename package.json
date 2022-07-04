@@ -24,5 +24,11 @@
   },
   "publishConfig": {
     "@gabriel-brotas:registry": "https://npm.pkg.github.com/"
+  },
+  "release": {
+    "branches": [
+      { "name": "master" },
+      { "name": "develop", "channel": "beta", "prerelease": "beta" }
+    ]
   }
 }
