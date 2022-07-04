@@ -26,17 +26,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabriel-brotas/is-odd.git"
+    "url": "https://github.com/gabriel-brotas/is-odd.git"
   },
   "release": {
     "branches": [
       "master"
     ],
     "plugins": [
-        ["@semantic-release/commit-analyzer"],
-        ["@semantic-release/release-notes-generator"],
-        ["@semantic-release/github"],
-        ["@semantic-release/npm"]
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/github",
+        "@semantic-release/npm"
     ]
   }
 }
