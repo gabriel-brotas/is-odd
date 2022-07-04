@@ -30,14 +30,14 @@ jobs:
       
       - name: verify env
         run: |
-          echo "token = '${{ secrets.AUTH_TOKEN }}' " > .env
+          echo "token '${{ secrets.AUTH_TOKEN }}' " > .env
           cat .env
 
       - name: Release
         env:
           GH_TOKEN: '${{ secrets.AUTH_TOKEN }}'
           NPM_TOKEN: '${{ secrets.AUTH_TOKEN }}'
-          NODE_AUTH_TOKEN: '${{ secrets.AUTH_TOKEN }}''
+          NODE_AUTH_TOKEN: '${{ secrets.AUTH_TOKEN }}'
         run: npx semantic-release
 
     # steps:
