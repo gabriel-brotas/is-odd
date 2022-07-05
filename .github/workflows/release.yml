@@ -30,11 +30,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: npx semantic-release
       
-      - name: Update Package
-        run: |
-          npm version patch
-          npm publish
-
   publish-gpr:
     needs: build
     runs-on: ubuntu-latest
