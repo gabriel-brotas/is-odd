@@ -13,8 +13,13 @@ function isNumber(number) {
     return typeof number == "number"
 }
 
+function helloWorld() {
+    console.log("hello world")
+}
+
 module.exports = {
     isOdd,
     isEven,
-    isNumber
+    isNumber,
+    helloWorld
 }
