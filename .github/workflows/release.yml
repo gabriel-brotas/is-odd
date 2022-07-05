@@ -45,11 +45,11 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - name: Update Package Version
-        run: npm run pre-publish
-
-      - name: Update Package
         run: |
           npm install
-          npm publish
+          npm run pre-publish
+
+      - name: Update Package
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
