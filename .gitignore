@@ -1,4 +1,4 @@
-.env
-.npmrc
+# .env
+# .npmrc
 
 node_modules/
