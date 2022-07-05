@@ -43,13 +43,13 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
 
-      - name: Setup GIT
-        run: |
-          git config --global user.email "gabriel.brotas@wexinc.com"
-          git config --global user.name "gabriel-brotas"
+      # - name: Setup GIT
+      #   run: |
+      #     git config --global user.email "gabriel.brotas@wexinc.com"
+      #     git config --global user.name "gabriel-brotas"
 
-      - name: Update Package Version
-        run: npm version patch
+      # - name: Update Package Version
+      #   run: npm version patch
 
       - name: Update Package
         run: npm publish
