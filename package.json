@@ -4,6 +4,7 @@
   "description": "verify is number is even or odd",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "semantic-release": "semantic-release"
   },
   "keywords": [
