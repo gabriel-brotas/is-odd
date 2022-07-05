@@ -9,6 +9,7 @@ function isEven(number) {
 }
 
 function isNumber(number) {
+    console.log("running is number")
     return typeof number == "number"
 }
 
