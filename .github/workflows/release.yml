@@ -2,7 +2,7 @@ name: Node.js Package
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, develop ]
 
 jobs:
   build:
@@ -49,7 +49,16 @@ jobs:
           npm install
           npm run pre-publish
 
-      - name: Update Package
+      - run: echo github.ref
+
+      - name: Update Master Package
+        if: github.ref == 'refs/heads/master'
         run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        
+      - name: Update Develop Package
+        if: github.ref == 'refs/heads/develop'
+        run: npm publish --branches develop
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
