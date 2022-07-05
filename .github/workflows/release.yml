@@ -44,6 +44,11 @@ jobs:
           registry-url: https://npm.pkg.github.com
       
       # TODO: Run CI
+      - name: Setup GIT
+        run: |
+          git switch -c master
+          git config --global user.email "gabriel.brotas@wexinc.com"
+          git config --global user.name "gabriel-brotas"
 
       - run: |
           npm version patch
