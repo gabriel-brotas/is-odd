@@ -35,12 +35,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: write
-      contents: write
+      contents: read
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.13.0
+          node-version: 12
           registry-url: https://npm.pkg.github.com/
 
       - name: Setup GIT
