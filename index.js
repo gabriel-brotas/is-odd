@@ -1,4 +1,12 @@
+/**
+ * @deprecated since version 2 -- 
+ */
 function isOdd(number) {
+    console.log(number)
+    return number % 2 != 0
+}
+
+function isAOdd(number) {
     console.log(number)
     return number % 2 != 0
 }
@@ -24,5 +32,6 @@ module.exports = {
     isOdd,
     isEven,
     isNumber,
-    helloWorld
+    helloWorld,
+    isAOdd
 }
