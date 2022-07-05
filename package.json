@@ -30,12 +30,7 @@
   },
   "release": {
     "branches": [
-      "master",
-      {
-        "name": "develop",
-        "channel": "beta",
-        "prerelease": "beta"
-      }
+      "master"
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
