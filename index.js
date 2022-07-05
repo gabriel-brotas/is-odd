@@ -6,7 +6,7 @@ function isOdd(number) {
     return number % 2 != 0
 }
 
-function isAOdd(number) {
+function isAnOdd(number) {
     console.log(number)
     return number % 2 != 0
 }
