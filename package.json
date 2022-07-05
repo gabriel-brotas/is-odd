@@ -1,6 +1,6 @@
 {
   "name": "@gabriel-brotas/is-odd",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "verify is number is even or odd",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,11 @@
   "release": {
     "branches": [
       "master",
-      { "name": "develop", "channel": "beta", "prerelease": "beta" }
+      {
+        "name": "develop",
+        "channel": "beta",
+        "prerelease": "beta"
+      }
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
