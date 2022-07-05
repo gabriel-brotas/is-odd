@@ -8,7 +8,12 @@ function isEven(number) {
     return number % 2 == 0
 }
 
+function isNumber(number) {
+    return typeof number == "number"
+}
+
 module.exports = {
     isOdd,
-    isEven
+    isEven,
+    isNumber
 }
