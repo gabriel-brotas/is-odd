@@ -4,6 +4,7 @@ function isOdd(number) {
 }
 
 function isEven(number) {
+    console.log(number)
     return number % 2 == 0
 }
 
