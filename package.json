@@ -1,6 +1,6 @@
 {
   "name": "@gabriel-brotas/is-odd",
-  "version": "1.5.3",
+  "version": "1.7.0",
   "description": "verify is number is even or odd",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,12 @@
   },
   "homepage": "https://github.com/gabriel-brotas/is-odd#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/release-notes-generator": "^10.0.3",
+    "husky": "^8.0.1",
     "semantic-release": "^19.0.3"
   },
   "publishConfig": {
