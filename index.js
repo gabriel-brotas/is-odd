@@ -14,7 +14,7 @@ function isNumber(number) {
 }
 
 /**
- * @deprecated since version 1.11
+ * @deprecated since version 1.11.0
  */
 function helloWorld() {
     console.log("hello world")
