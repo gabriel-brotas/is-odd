@@ -49,14 +49,7 @@ jobs:
           npm install
           npm run pre-publish
 
-      - run: echo github.ref
-
       - name: Update Master Package
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
-        
-      - name: Update Develop Package
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
