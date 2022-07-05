@@ -53,6 +53,8 @@ jobs:
         run: npm version patch
 
       - name: Update Package
-        run: npm publish
+        run: |
+          npm install
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
