@@ -5,11 +5,6 @@ function isOdd(number) {
     return number % 2 != 0
 }
 
-function isAnOdd(number) {
-    console.log(number)
-    return number % 2 != 0
-}
-
 function isEven(number) {
     console.log(number)
     return number % 2 == 0
