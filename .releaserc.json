@@ -1,11 +1,13 @@
 {
   "branches": [ 
     "master",
-    { "name": "develop", "channel": "beta", "prerelease": "beta" }
+    { "name": "develop", "prerelease": true },
+    { "name": "test-*", "prerelease": true}
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/github"
+    "@semantic-release/github",
+    "@semantic-release/npm"
   ]
 }

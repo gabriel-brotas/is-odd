@@ -1,9 +1,11 @@
 {
   "name": "@gabriel-brotas/is-odd",
-  "version": "1.5.0",
+  "version": "3.1.1",
   "description": "verify is number is even or odd",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
+    "commit": "git-cz",
     "semantic-release": "semantic-release"
   },
   "keywords": [
@@ -16,13 +18,18 @@
   },
   "homepage": "https://github.com/gabriel-brotas/is-odd#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/github": "^8.0.4",
     "@semantic-release/release-notes-generator": "^10.0.3",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
     "semantic-release": "^19.0.3"
   },
   "publishConfig": {
-    "@gabriel-brotas:registry": "https://npm.pkg.github.com"
+    "@gabriel-brotas:registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
@@ -31,12 +38,22 @@
   "release": {
     "branches": [
       "master",
-      { "name": "develop", "channel": "beta", "prerelease": "beta" }
+      { "name": "develop", "prerelease": true },
+      { "name": "test-*", "prerelease": true}
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
+      "@semantic-release/github",
+      "@semantic-release/npm"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }
