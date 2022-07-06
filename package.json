@@ -7,7 +7,7 @@
     "prepare": "husky install",
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "pre-publish": "node scripts/update-version.js"
+    "publish": "node scripts/update-version.js"
   },
   "keywords": [
     "javascript"

@@ -50,3 +50,7 @@ jobs:
           npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+
+      # - name: Update Master Package
+      #   run: npm publish
+      
