@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path')
 const axios = require('axios')
-const { execSync } = require("child_process")
+const { exec } = require("child_process")
 
 const SEMANTIC_VERSIONING_REGEX = /^([0-9]+)\.([0-9]+)\.([0-9]+)(?:-([0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*))?(?:\+[0-9A-Za-z-]+)?$/
 
@@ -28,9 +28,17 @@ async function updatePackageVersion() {
     
     console.log("Publishing...")
 
-    execSync('npm publish', {
-        stdio: 'inherit'
-    })
+    exec("npm publish", (error, stdout, stderr) => {
+        if (error) {
+            console.log(`error: ${error.message}`);
+            return;
+        }
+        if (stderr) {
+            console.log(`stderr: ${stderr}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+    });
 }
 
 updatePackageVersion()
