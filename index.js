@@ -11,7 +11,7 @@ function isEven(number) {
 }
 
 function isNumber(number) {
-    console.log("running is number")
+    console.log("running is nasdumber")
     return typeof number == "number"
 }
 
