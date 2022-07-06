@@ -15,12 +15,6 @@ function isNumber(number) {
     return typeof number == "number"
 }
 
-/**
- * @deprecated since version 1.11.0 -- 
- */
-function helloWorld() {
-    console.log("hello world")
-}
 
 module.exports = {
     isOdd,
