@@ -30,26 +30,26 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
         run: npx semantic-release
       
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
+  # publish-gpr:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     packages: write
+  #     contents: read
 
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 12
+  #         registry-url: https://npm.pkg.github.com/
 
-      - name: Update Package Version
-        run: |
-          npm install
-          npm run publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+  #     - name: Update Package Version
+  #       run: |
+  #         npm install
+  #         npm run publish
+  #       env:
+  #         NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
 
       # - name: Update Master Package
       #   run: npm publish
