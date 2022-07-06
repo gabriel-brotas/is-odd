@@ -2,12 +2,6 @@
  * @deprecated since version 2 -- 
  */
 function isOdd(number) {
-    console.log(number)
-    return number % 2 != 0
-}
-
-function isAnOdd(number) {
-    console.log(number)
     return number % 2 != 0
 }
 
