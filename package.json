@@ -38,7 +38,7 @@
   "release": {
     "branches": [
       "master",
-      { "name": "develop", "prerelease": true },
+      { "name": "develop", "channel": "prerelease", "prerelease": true },
       { "name": "test-*", "prerelease": true}
     ],
     "plugins": [
