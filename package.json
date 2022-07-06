@@ -38,7 +38,8 @@
   "release": {
     "branches": [
       "master",
-      { "name": "beta", "channel": "prerelease", "prerelease": true }
+      { "name": "beta", "channel": "prerelease", "prerelease": true },
+      { "name": "test-*", "prerelease": false }
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
