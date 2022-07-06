@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path')
 const axios = require('axios')
+const { execSync } = require("child_process")
 
 
 async function getLastTag() {
@@ -14,9 +15,12 @@ async function updatePackageVersion() {
     const packageJsonPath = path.join(__dirname, "../package.json")
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'))
     packageJson.version = lastTag
-    console.log(lastTag)
 
     fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2))
+
+    execSync('npm publish', {
+        stdio: 'inherit'
+    })
 }
 
 updatePackageVersion()

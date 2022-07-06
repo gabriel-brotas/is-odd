@@ -47,9 +47,6 @@ jobs:
       - name: Update Package Version
         run: |
           npm install
-          npm run pre-publish
-
-      - name: Update Master Package
-        run: npm publish
+          npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
